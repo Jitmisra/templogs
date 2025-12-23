@@ -1290,5 +1290,97 @@ smo                Active   2m20s
 strimzi-system     Active   5m28s
 SMO Installation completed successfully in 5 minutes.
 $ 
+kubectl get --help' for usage.
+$ kubectl get pods -A
+NAMESPACE          NAME                                                READY   STATUS            RESTARTS      AGE
+kube-system        calico-kube-controllers-64b69c8f54-j4j69            1/1     Running           0             10m
+kube-system        calico-node-wjk26                                   1/1     Running           0             10m
+kube-system        coredns-668d6bf9bc-dppzm                            1/1     Running           0             10m
+kube-system        coredns-668d6bf9bc-gc2bl                            1/1     Running           0             10m
+kube-system        etcd-aiml                                           1/1     Running           0             10m
+kube-system        kube-apiserver-aiml                                 1/1     Running           0             10m
+kube-system        kube-controller-manager-aiml                        1/1     Running           0             10m
+kube-system        kube-proxy-sttgl                                    1/1     Running           0             10m
+kube-system        kube-scheduler-aiml                                 1/1     Running           0             10m
+mariadb-operator   mariadb-operator-5876659c44-47fdc                   1/1     Running           0             8m37s
+mariadb-operator   mariadb-operator-cert-controller-768c7889d6-5mm24   1/1     Running           0             8m37s
+mariadb-operator   mariadb-operator-webhook-7b8697bb-pxnqs             1/1     Running           0             8m37s
+nonrtric           a1-sim-osc-0-7756867694-9vkc6                       1/1     Running           0             6m14s
+nonrtric           a1-sim-osc-1-775ff747-wsbtj                         1/1     Running           0             6m14s
+nonrtric           a1-sim-std-0-75cd5d48c5-b9qmx                       1/1     Running           0             6m14s
+nonrtric           a1-sim-std-1-6457947b84-klpvn                       1/1     Running           0             6m14s
+nonrtric           a1-sim-std2-0-7fd4898bf4-pgtvd                      1/1     Running           0             6m14s
+nonrtric           a1-sim-std2-1-67f59bfb67-76ph2                      1/1     Running           0             6m14s
+nonrtric           capifcore-ccbfbff56-8kc2j                           1/1     Running           0             6m14s
+nonrtric           controlpanel-56cf48cb74-zxf7s                       1/1     Running           0             6m14s
+nonrtric           dmaapadapterservice-0                               1/1     Running           0             6m14s
+nonrtric           dmeparticipant-587677f696-z8hml                     1/1     Running           0             6m14s
+nonrtric           informationservice-0                                1/1     Running           0             6m14s
+nonrtric           nonrtricgateway-86d47b667c-x22mp                    1/1     Running           0             6m14s
+nonrtric           oran-nonrtric-kong-7bfdd99dd-wt2s7                  2/2     Running           0             6m14s
+nonrtric           oran-nonrtric-kong-init-migrations-84c55            0/1     Completed         0             6m14s
+nonrtric           oran-nonrtric-postgresql-0                          1/1     Running           0             6m14s
+nonrtric           policymanagementservice-0                           1/1     Running           0             6m14s
+nonrtric           rappmanager-0                                       1/1     Running           0             6m14s
+nonrtric           servicemanager-6d68c57877-wsb68                     1/1     Running           0             6m14s
+nonrtric           topology-7d86cfb845-p8mg7                           1/1     Running           0             6m14s
+onap               mariadb-galera-0                                    1/1     Running           0             7m3s
+onap               onap-cps-core-67f977b774-vr4l9                      1/1     Running           0             6m47s
+onap               onap-cps-postgres-init-config-job-p6q4k             0/1     Completed         0             6m47s
+onap               onap-cps-temporal-64d88ffcc4-rhn8p                  1/1     Running           0             6m47s
+onap               onap-cps-temporal-db-0                              1/1     Running           0             6m47s
+onap               onap-dcae-ves-collector-5d7b77bf95-2frf2            1/1     Running           0             3m24s
+onap               onap-ncmp-dmi-plugin-664784d768-cqflk               0/1     PodInitializing   0             6m47s
+onap               onap-policy-apex-pdp-75498445cb-jdmgk               1/1     Running           0             6m34s
+onap               onap-policy-api-6d9d46f84b-4cr6j                    0/1     Init:2/4          0             6m33s
+onap               onap-policy-clamp-ac-a1pms-ppnt-664757fb94-c9clz    1/1     Running           0             6m34s
+onap               onap-policy-clamp-ac-http-ppnt-f65c6fc7c-jxrjd      1/1     Running           0             6m34s
+onap               onap-policy-clamp-ac-k8s-ppnt-78fb99b7db-w8l9t      1/1     Running           0             6m33s
+onap               onap-policy-clamp-ac-kserve-ppnt-96bd46764-mmg8j    1/1     Running           0             6m33s
+onap               onap-policy-clamp-ac-pf-ppnt-d69dcc66d-cl6cl        1/1     Running           0             6m34s
+onap               onap-policy-clamp-runtime-acm-6b79d6cd59-gkxxv      0/1     Init:0/2          0             6m33s
+onap               onap-policy-pap-67fcd9874d-cpmxr                    0/1     Init:0/2          0             6m33s
+onap               onap-policy-postgres-primary-5fcc987884-pkcgz       1/1     Running           0             6m33s
+onap               onap-policy-postgres-replica-55566db74b-6vs56       1/1     Running           0             6m34s
+onap               onap-postgres-primary-757f57c74-km42s               1/1     Running           0             6m55s
+onap               onap-postgres-replica-66b479ddc6-65smh              1/1     Running           0             6m55s
+onap               onap-sdnc-0                                         1/1     Running           0             6m26s
+onap               onap-sdnc-ansible-server-6f6cbf88fd-s7lz6           0/1     PodInitializing   0             6m26s
+onap               onap-sdnc-sdnrdb-init-job-rpbnp                     0/1     Completed         0             6m26s
+onap               onap-sdnc-web-5f896b94f-6mgfq                       0/1     PodInitializing   0             6m26s
+onap               onap-strimzi-entity-operator-5c9965dbb9-xz54m       2/2     Running           0             7m26s
+onap               onap-strimzi-onap-strimzi-broker-0                  1/1     Running           0             2m52s
+onap               onap-strimzi-onap-strimzi-controller-1              1/1     Running           0             3m25s
+openebs            openebs-localpv-provisioner-569b6d7f77-9f26l        1/1     Running           0             8m38s
+smo                bundle-server-54cbbbc9d7-2c5hb                      1/1     Running           0             3m20s
+smo                cps-kafkauser-patch-bgk6s                           0/1     Completed         0             4m4s
+smo                dfc-0                                               0/2     PodInitializing   0             3m20s
+smo                focom-to-teiv-adapter-6ffc7446c8-w8vjg              1/1     Running           0             3m20s
+smo                ics-init-pb4zj                                      0/1     PodInitializing   0             3m20s
+smo                influxdb2-0                                         1/1     Running           0             3m20s
+smo                influxdb2-init-nzzzd                                0/1     Completed         0             3m20s
+smo                kafka-client                                        1/1     Running           0             3m20s
+smo                kafka-producer-pm-json2influx-0                     0/1     PodInitializing   0             3m20s
+smo                kafka-producer-pm-json2kafka-0                      0/1     PodInitializing   0             3m20s
+smo                kafka-producer-pm-xml2json-0                        0/1     PodInitializing   0             3m20s
+smo                keycloak-649dd6dd8b-7dvx4                           1/1     Running           0             4m59s
+smo                keycloak-init-gfkjx                                 0/1     Completed         0             4m57s
+smo                keycloak-proxy-6b76854c98-898z4                     1/1     Running           0             4m58s
+smo                minio-0                                             0/1     PodInitializing   0             3m20s
+smo                minio-client                                        1/1     Running           0             3m20s
+smo                ncmp-to-teiv-adapter-8568c94dc6-t64xt               1/1     Running           0             3m20s
+smo                opa-76849b588f-2g2tv                                1/1     Running           0             3m20s
+smo                oran-smo-postgresql-0                               0/1     Init:0/1          0             3m20s
+smo                pm-producer-json2kafka-0                            0/2     PodInitializing   0             3m20s
+smo                pmlog-0                                             0/2     PodInitializing   0             3m20s
+smo                policy-kafkauser-patch-rxsmx                        0/1     Completed         0             3m57s
+smo                redpanda-console-5f867cf878-kdx2v                   0/1     PodInitializing   0             3m20s
+smo                strimzi-patch-2p4h7                                 0/1     Completed         0             3m49s
+smo                topology-exposure-5c6d86795-fd8jj                   0/1     Init:Error        5 (99s ago)   3m20s
+smo                topology-ingestion-69bbddd8c7-hpkcl                 0/1     Init:Error        5 (98s ago)   3m20s
+smo                vescollector-patch-z7nlb                            0/1     Completed         0             3m25s
+strimzi-system     strimzi-cluster-operator-b8f99bbc4-skrpt            1/1     Running           0             8m33s
+$ 
+
 
 ```
